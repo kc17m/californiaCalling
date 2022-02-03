@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "LarishNeue";
+    src: url(../fonts/Larish/LarishNeueSemibold.woff);
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/workSans/static/WorkSans-Medium.ttf);
+}
+
+h1, h2, h3, h4 {
+    font-family: "LarishNeue";    
+}
+
+a, p {
+    font-family: "WorkSans";
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+header, section:nth-of-type(odd), footer {
+    background-color: #000;
+    color: #fff;
+} 
+
+header, main, footer {
+    width: 95%;
+}
+
+header {
+    margin: 2% 2% 0 2%;
+}
+
+main {
+    margin: 0 2% 0 2%;
+}
+
+footer {
+    margin: 0 2% 2% 2%;
+}
+
+
+p {
+    padding: 3% 0;
+}
+
+.button {
+    border: 1px solid white;
+    text-align: center;
+    padding: 1% 2%;
+}
+
+.button:hover {
+    border: 1px solid #fff;
+    background: lightgrey;
+    color: #000;
+}
+
+
+
+
+
