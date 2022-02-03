@@ -264,14 +264,18 @@ footer nav ol {
 footer nav ol .ngo {
   width: 30%;
 }
+footer nav div {
+  transform: rotate(30deg);
+}
 footer .banner {
+  width: 600px;
   background: #fff;
   color: #000;
   z-index: 6;
-  -webkit-animation: bannerText 2s linear infinite;
-          animation: bannerText 2s linear infinite;
+  -webkit-animation: bannerText 4s linear infinite;
+          animation: bannerText 4s linear infinite;
   position: absolute;
-  left: 47%;
+  left: 60%;
   font-size: 6rem;
   line-height: 5rem;
   transform: rotate(45deg);
@@ -279,4 +283,20 @@ footer .banner {
 footer .banner span {
   color: #fff;
   -webkit-text-stroke: 1px #000;
+}
+@-webkit-keyframes bannerText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes bannerText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=main.css.map */
