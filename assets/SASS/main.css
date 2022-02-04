@@ -20,11 +20,6 @@ a, p {
   font-family: "WorkSans";
 }
 
-a {
-  text-decoration: unset;
-  color: unset;
-}
-
 ul, ol {
   list-style: none;
 }
@@ -71,12 +66,13 @@ p {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: clamp(1.8rem, 6vw, 6rem);
   line-height: 4rem;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: clamp(2rem, 6vw, 6rem);
+  line-height: 4.4rem;
 }
 
 h3 {
@@ -86,6 +82,11 @@ h3 {
 p {
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
 }
 
 header article:nth-of-type(1) {
@@ -153,13 +154,13 @@ section:nth-of-type(2) article.stuckImg .stuck04 {
   margin: 6% 5% 5% 17%;
 }
 section:nth-of-type(2) article.stuckImg .stuck05 {
-  margin: -7% -1% 5% 66%;
+  margin: -4% -1% 5% 71%;
 }
 section:nth-of-type(2) article.stuckImg .stuck06 {
-  margin: 0 2% 11% -47%;
+  margin: 0 -8% -9% -7%;
 }
 section:nth-of-type(2) article.stuckImg .stuck07 {
-  margin: 21% 5% 8% 63%;
+  margin: 17% -2% 8% 35%;
 }
 
 section:nth-of-type(2) article:nth-of-type(5) figure:nth-of-type(2) {
@@ -237,47 +238,47 @@ div .animated {
 }
 footer {
   margin: 30% 2% 2% 2%;
-  padding: 10% 5%;
+  padding: 8% 5% 4% 5%;
   position: relative;
   overflow: hidden;
 }
-footer article:nth-of-type(2) {
-  padding: 0 51% 10% 0;
+footer .join {
+  width: 50%;
+  padding: 0 0 10% 0;
 }
-footer article:nth-of-type(2) h3 {
-  padding: 0 0 5% 0;
+footer h3 {
+  margin-bottom: 10%;
+}
+footer .button {
+  padding: 3% 6%;
 }
 footer nav {
+  width: 112%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 footer nav ul li.socialMedia {
-  width: 20%;
-  margin: 2%;
-  padding: 2%;
+  width: 15%;
+  padding: 0%;
 }
 footer nav ol {
   display: flex;
-  justify-content: space-evenly;
+  gap: 4%;
 }
 footer nav ol .ngo {
-  width: 30%;
-}
-footer nav div {
-  transform: rotate(30deg);
+  width: 20%;
 }
 footer .banner {
-  width: 600px;
+  width: 280%;
+  left: 0%;
+  bottom: -71%;
   background: #fff;
   color: #000;
-  z-index: 6;
   -webkit-animation: bannerText 4s linear infinite;
           animation: bannerText 4s linear infinite;
   position: absolute;
-  left: 60%;
-  font-size: 6rem;
-  line-height: 5rem;
+  padding: 1%;
   transform: rotate(45deg);
 }
 footer .banner span {
@@ -286,17 +287,21 @@ footer .banner span {
 }
 @-webkit-keyframes bannerText {
   0% {
-    transform: translateX(0);
+    left: -20%;
+    bottom: -20%;
   }
   100% {
-    transform: translateX(-100%);
+    left: -100%;
+    bottom: 115%;
   }
 }
 @keyframes bannerText {
   0% {
-    transform: translateX(0);
+    left: -20%;
+    bottom: -20%;
   }
   100% {
-    transform: translateX(-100%);
+    left: -100%;
+    bottom: 115%;
   }
 }/*# sourceMappingURL=main.css.map */

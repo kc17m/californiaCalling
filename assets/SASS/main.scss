@@ -1,15 +1,16 @@
 @import "_general.scss";
+@import "_mixin.scss";
 
-// #### mobile max-width: 480px ##### 
+// #### Desktop view, width more than 480 px ##### 
 
 h1 {
-    font-size: 5rem;
-    line-height: 4rem;    
+    font-size: clamp(1.8rem, 6vw, 6rem);
+    line-height: 4rem;
 }
 
 h2 {
-    font-size: 5rem;
-}
+    font-size: clamp(2rem, 6vw, 6rem);
+    line-height: 4.4rem;}
 
 h3 {
     font-size: 2.3rem;
@@ -19,6 +20,10 @@ p {
     font-size: .9rem;
     line-height: 1.5rem;
 } 
+
+a {
+   @include ahref; 
+}
 
 
 
@@ -60,14 +65,12 @@ section:nth-of-type(1)  {
         }
     }
 
-
 article.bgCalif {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     figure {
-        width: 45%;
-           
+        width: 45%;           
     }
 }
 
@@ -94,13 +97,13 @@ section:nth-of-type(2) article.stuckImg  {
             margin: 6% 5% 5% 17%;
         }
         .stuck05 {
-           margin: -7% -1% 5% 66%;
+           margin: -4% -1% 5% 71%;
         }
         .stuck06 {
-           margin: 0 2% 11% -47%;
+           margin: 0 -8% -9% -7%;
         }
         .stuck07 {
-           margin: 21% 5% 8% 63%;
+           margin: 17% -2% 8% 35%;
         }     
     }
         section:nth-of-type(2) article:nth-of-type(5) figure:nth-of-type(2) {
@@ -159,7 +162,6 @@ section:nth-of-type(2) article.stuckImg  {
         z-index: 3;
         
     }
-
    
     div .animated {
         width: 30%;
@@ -177,47 +179,50 @@ section:nth-of-type(2) article.stuckImg  {
     }
 
 
-
     footer {
         margin: 30% 2% 2% 2%;
-        padding: 10% 5%;
-        position: relative;
-        article:nth-of-type(2) {
-            padding: 0 51% 10% 0;
-            h3 {
-                padding: 0 0 5% 0;
-            }                        
+        padding: 8% 5% 4% 5%;
+        position: relative;       
+        overflow: hidden; 
+        .join {
+            width: 50%;
+            padding: 0 0 10% 0;
+        } 
+        h3 {
+            margin-bottom: 10%;;
+        }      
+        .button {
+            padding: 3% 6%;
         }
-        overflow: hidden;        
         nav {
+            width: 112%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             ul li.socialMedia {
-                width: 20%;
-                margin: 2%;
-                padding: 2%;                              
+                width: 15%;
+                padding: 0%;                              
             }
-            ol {display: flex;
-                justify-content: space-evenly;
+            ol {
+                display: flex;
+                gap: 4%;
                 .ngo {
-                    width: 30%;
+                    width: 20%;
                 }
             }
-            div {
-                transform: rotate(30deg);
-            }
+            
+            
         }
         .banner {
-            width: 600px;
+            width: 280%;
+            // margin: 20% 0 0 20%;
+            left: 0%;
+            bottom: -71%;
             background: #fff;
             color: #000;
-            z-index: 6;
             animation: bannerText 4s linear infinite;
             position: absolute;
-            left: 60%;
-            font-size: 6rem;
-            line-height: 5rem;
+            padding: 1%;            
             transform: rotate(45deg);
             span {
                 color: #fff;
@@ -227,10 +232,11 @@ section:nth-of-type(2) article.stuckImg  {
         }
         @keyframes bannerText {
             0% {
-                transform: translateX(0);
+                left: -20%; bottom: -20%;
+
             }
            100% {
-            transform: translateX(-100%);
+                left: -100%; bottom: 115%;
         }
     }
         
