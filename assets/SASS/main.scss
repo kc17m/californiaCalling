@@ -10,7 +10,7 @@ h1 {
 
 h2 {
     font-size: clamp(2rem, 6vw, 6rem);
-    line-height: clamp(.5rem, 5vh, 5rem);
+    line-height: clamp(.5rem, 7vh, 5rem);
 }
 
 h3 {
@@ -230,7 +230,6 @@ section:nth-of-type(2) article.stuckImg  {
         }
         .banner {
             width: 280%;
-            // margin: 20% 0 0 20%;
             left: 0%;
             bottom: -71%;
             background: #fff;
@@ -246,13 +245,13 @@ section:nth-of-type(2) article.stuckImg  {
         }
         @keyframes bannerText {
             0% {
-                left: -20%; bottom: -20%;
+                left: -20%; bottom: -15%;
             }
             50% {
-                left: -100%; bottom: 110%;
+                left: -100%; bottom: 124%;
             }
             100% {
-                left: -20%; bottom: -20%;
+                left: -20%; bottom: -15%;
         }
     }
 }

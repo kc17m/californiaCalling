@@ -73,7 +73,7 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 6vw, 6rem);
-  line-height: clamp(.5rem, 5vh, 5rem);
+  line-height: clamp(.5rem, 7vh, 5rem);
 }
 
 h3 {
@@ -308,29 +308,29 @@ footer .banner span {
 @-webkit-keyframes bannerText {
   0% {
     left: -20%;
-    bottom: -20%;
+    bottom: -15%;
   }
   50% {
     left: -100%;
-    bottom: 110%;
+    bottom: 124%;
   }
   100% {
     left: -20%;
-    bottom: -20%;
+    bottom: -15%;
   }
 }
 @keyframes bannerText {
   0% {
     left: -20%;
-    bottom: -20%;
+    bottom: -15%;
   }
   50% {
     left: -100%;
-    bottom: 110%;
+    bottom: 124%;
   }
   100% {
     left: -20%;
-    bottom: -20%;
+    bottom: -15%;
   }
 }
 
