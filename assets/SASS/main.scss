@@ -340,27 +340,21 @@ section:nth-of-type(2) article.stuckImg  {
         }
         //#### footer mobile ### ///
         footer {
-            margin: 30% 2% 2% 2%;
-            padding: 8% 5% 4% 5%;
-            position: relative;       
-            overflow: hidden; 
+            margin: 0% 2% 2% 2%;
             .join {
-                width: 36%;
-                padding: 0 0 10% 0;
+                width: 90%;
+                padding: 32% 0 10% 0;
             } 
             h3 {
-                margin-bottom: 10%;;
+                margin-bottom: 17%;
+                font-size: 1.5rem;
             }      
-            .button {
-                padding: 3% 6%;
-            }
+            
             nav {
-                width: 112%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                width: 161%;
+                // display: flex;
                 ul li.socialMedia {
-                    width: 15%;
+                    width: 20%;
                     padding: 0%;                              
                 }
                 ol {
@@ -372,30 +366,18 @@ section:nth-of-type(2) article.stuckImg  {
                 }          
             }
             .banner {
-                width: 280%;
-                // margin: 20% 0 0 20%;
-                left: 0%;
-                bottom: -71%;
-                background: #fff;
-                color: #000;
-                animation: bannerText 10s linear infinite;
-                position: absolute;
-                padding: 1%;            
-                transform: rotate(45deg);
-                span {
-                    color: #fff;
-                    -webkit-text-stroke: 1px #000;
-                }            
+                width: 480%;
+                transform: translateY(150px);
             }
             @keyframes bannerText {
                 0% {
-                    left: -20%; bottom: -20%;
+                    left: 0%; bottom: 110%;
                 }
                 50% {
                     left: -100%; bottom: 110%;
                 }
                 100% {
-                    left: -20%; bottom: -20%;
+                    left: 0%; bottom: 110%;
             }
         }
     }

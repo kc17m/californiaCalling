@@ -419,29 +419,21 @@ footer .banner span {
   }
 
   footer {
-    margin: 30% 2% 2% 2%;
-    padding: 8% 5% 4% 5%;
-    position: relative;
-    overflow: hidden;
+    margin: 0% 2% 2% 2%;
   }
   footer .join {
-    width: 36%;
-    padding: 0 0 10% 0;
+    width: 90%;
+    padding: 32% 0 10% 0;
   }
   footer h3 {
-    margin-bottom: 10%;
-  }
-  footer .button {
-    padding: 3% 6%;
+    margin-bottom: 17%;
+    font-size: 1.5rem;
   }
   footer nav {
-    width: 112%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 161%;
   }
   footer nav ul li.socialMedia {
-    width: 15%;
+    width: 20%;
     padding: 0%;
   }
   footer nav ol {
@@ -452,47 +444,35 @@ footer .banner span {
     width: 20%;
   }
   footer .banner {
-    width: 280%;
-    left: 0%;
-    bottom: -71%;
-    background: #fff;
-    color: #000;
-    -webkit-animation: bannerText 10s linear infinite;
-            animation: bannerText 10s linear infinite;
-    position: absolute;
-    padding: 1%;
-    transform: rotate(45deg);
-  }
-  footer .banner span {
-    color: #fff;
-    -webkit-text-stroke: 1px #000;
+    width: 480%;
+    transform: translateY(150px);
   }
   @-webkit-keyframes bannerText {
     0% {
-      left: -20%;
-      bottom: -20%;
+      left: 0%;
+      bottom: 110%;
     }
     50% {
       left: -100%;
       bottom: 110%;
     }
     100% {
-      left: -20%;
-      bottom: -20%;
+      left: 0%;
+      bottom: 110%;
     }
   }
   @keyframes bannerText {
     0% {
-      left: -20%;
-      bottom: -20%;
+      left: 0%;
+      bottom: 110%;
     }
     50% {
       left: -100%;
       bottom: 110%;
     }
     100% {
-      left: -20%;
-      bottom: -20%;
+      left: 0%;
+      bottom: 110%;
     }
   }
 }/*# sourceMappingURL=main.css.map */
