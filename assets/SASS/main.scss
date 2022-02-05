@@ -82,41 +82,49 @@ section:nth-of-type(1)  {
 
 section:nth-of-type(2) {
     margin: 0 0 -15% 0;
-    article.stuckImg  {
-        display: flex;
-        flex-wrap: wrap;
-        figure {
-        width: clamp(250px, 25%, 400px);
+    position: relative;
+    figure  {
+        width: clamp(250px, 21%, 400px); 
+        position: absolute;
         }
-        .stuck01 {
-            margin: -5% 0 0 63%; 
+    .stuck01 {
+        top: -48%;
+        right: 10%;
         }
-        .stuck02 {
-           margin: 4% 0 8% -4%;
-        }
-        .stuck03 {
-           margin: 8% 0 0 73%;
-        }
-        .stuck04 {
-            margin: 0 0 -3% 11%;
-        }
-        .stuck05 {
-           margin: 0 0 19% 66%;
-        }
-        .stuck06 {
-           margin: -12% -8% -9% -5%;          
-        }
-        .stuck07 {
-           margin: 22% 0 8% 33%;
-        }     
+    .stuck02 {
+        top: -17%;
+        right: 76%;
     }
+    .stuck03 {
+        top: 20%;
+        right: -5%;
+    }
+    .stuck04 {
+        top: 42%;
+        right: 60%;
+    }
+    .stuck05 {
+        top: 52%;
+        right: 16%;
+    }
+    .stuck06 {
+        top: 76%;
+        right: 79%;      
+    }
+    .stuck07 {
+        top: 99%;
+        right: 17%;      
+    } 
+    
+}
         section:nth-of-type(2) article:nth-of-type(5) figure:nth-of-type(2) {
-    width: 40%;
+    width: 35%;
     }
-}       
+       
    section:nth-of-type(2) .txt {
-            width: 35%;
-            margin: -10% auto;
+            width: 40%;
+            margin: 30% auto ;
+           
             p {
                 width: 85%;
                 line-height: 2rem;
@@ -303,13 +311,14 @@ section:nth-of-type(2) {
         section:nth-of-type(2) {
             margin: 2% 0; ;
         }
-        section:nth-of-type(2) article.stuckImg {
+        section:nth-of-type(2) article.stuck {
+            display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 3%;
             figure {
-            width: 100%;
-            }
-            .stuck01, .stuck02, .stuck03, .stuck04, .stuck05, .stuck06, .stuck07 {
-                margin: 0 0 0 0;                 
+            width: 30%;
+            position: unset;
             }
         }                        
 
@@ -318,7 +327,7 @@ section:nth-of-type(2) {
             margin: 3% auto;                        
         }
         section:nth-of-type(2) article:nth-of-type(5) figure:nth-of-type(2) {
-            width: 100%;
+            width: 30%;
         }
         section:nth-of-type(3), section:nth-of-type(4) {
             padding: 0% 5% 0 05%;
