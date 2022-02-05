@@ -124,16 +124,15 @@ section:nth-of-type(1) .headerAsTxt {
 section:nth-of-type(1) article:nth-of-type(2) h2 {
   margin: -2% 0;
 }
-
-article.bgCalif {
+section:nth-of-type(1) article.bgCalif {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-article.bgCalif figure {
+section:nth-of-type(1) article.bgCalif figure {
   width: 50%;
 }
-article.bgCalif p {
+section:nth-of-type(1) article.bgCalif p {
   padding: 7% 0 6% 0;
 }
 
@@ -249,7 +248,7 @@ section:nth-of-type(4) figure:nth-of-type(2) {
 }
 
 section:nth-of-type(4) figure:nth-of-type(1) {
-  margin: 0 0 -52% 0%;
+  margin: 0 0 -52% 53%;
   z-index: 3;
   width: 80%;
 }
