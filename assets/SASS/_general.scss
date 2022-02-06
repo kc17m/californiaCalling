@@ -34,22 +34,9 @@ header, section:nth-of-type(odd), footer {
     color: #fff;
 } 
 
-header, main, footer {
-    width: 95%;
-}
-
-header {
-    margin: 2% 2% 0 2%;
-}
-
 main {
-    margin: -1% 2% 0 2%;
+    margin: -1% 0 0 0;
 }
-
-footer {
-    margin: 0 2% 2% 2%;
-}
-
 
 p {
     padding: 3% 0 6% 0;
